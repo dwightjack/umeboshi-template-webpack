@@ -1,0 +1,80 @@
+{
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "version": "0.0.1",
+  "license": "MIT",
+{{#if author}}
+  "author": {
+    "name": "{{author}}"
+  },
+{{/if}}
+  "contributors": [],
+  "main": "app/assets/js/app.js",
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "scripts": {
+    {{!-- SCRIPTS --}}
+    "start": "npm run clean && npm run modernizr && node ./node_modules/umeboshi-scripts/dev-server",
+    "server": "node ./node_modules/umeboshi-scripts/server",
+    "test": "cross-env BABEL_ENV=test jest --config ./node_modules/umeboshi-scripts/jest.loader.js",
+    "webpack": "webpack --config ./node_modules/umeboshi-config/webpack/webpack.conf.js --color --hide-modules",
+    "webpack:production": "cross-env NODE_ENV=production npm run webpack",
+    "modernizr": "node ./node_modules/umeboshi-scripts/modernizr",
+    "modernizr:production": "cross-env NODE_ENV=production npm run modernizr",
+    "clean": "rimraf ./public/*",
+    "build": "npm run clean && npm run lint && npm run modernizr && npm run webpack",
+    "build:production": "cross-env NODE_ENV=production npm run build",
+    {{#eq library 'vue'}}
+    "eslint": "eslint -c ./app/assets/js/.eslintrc.json \"./app/assets/js/**/*.{vue,js}\"",
+    "stylelint": "stylelint './app/assets/**/*.{vue,scss,css}' --config .stylelintrc.json",
+    {{else}}
+    "eslint": "eslint -c ./app/assets/js/.eslintrc.json \"./app/assets/js/**/*.js\"",
+    "stylelint": "stylelint \"./app/assets/**/*.{scss,css}\" --config .stylelintrc.json",
+    {{/eq}}
+    "lint": "npm run eslint && npm run stylelint"
+  },
+  "dependencies": {
+    {{!-- DEPENDENCIES --}}
+    {{#eq library 'react'}}
+    "classnames": "2.2.5",
+    "prop-types": "15.5.10",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    {{/eq}}
+    {{#eq library 'vue'}}
+    "vue": "~2.5.0",
+    "vue-router": "~2.7.0",
+    {{/eq}}
+    "babel-polyfill": "6.26.0",
+    "normalize.css": "7.0.0",
+    "sass-mq": "3.3.2"
+  },
+  "devDependencies": {
+    {{!-- DEV_DEPENDENCIES --}}
+    {{#eq library 'vanilla'}}
+    "babel-preset-umeboshi": "^0.1.0",
+    "eslint-config-umeboshi": "^0.1.0",
+    "stylelint-config-umeboshi": "^0.1.0",
+    {{/eq}}
+    {{#eq library 'react'}}
+    "babel-preset-umeboshi-react": "^0.1.0",
+    "enzyme": "2.9.1",
+    "eslint-config-umeboshi-react": "^0.1.0",
+    "react-test-renderer": "15.6.1",
+    "umeboshi-config-react": "^0.1.0",
+    "stylelint-config-umeboshi": "^0.1.0",
+    {{/eq}}
+    {{#eq library 'vue'}}
+    "babel-preset-umeboshi": "^0.1.0",
+    "eslint-config-umeboshi-vue": "^0.1.0",
+    "stylelint-config-umeboshi-vue": "^0.1.0",
+    "umeboshi-config-vue": "^0.1.0",
+    {{/eq}}
+    "cross-env": "5.0.5",
+    "eslint-config-umeboshi-node": "^0.1.0",
+    "rimraf": "2.6.1",
+    "umeboshi-config": "^0.1.0",
+    "umeboshi-scripts": "^0.1.0"
+  }
+}

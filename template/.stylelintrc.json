@@ -1,0 +1,3 @@
+{
+    "extends": ["stylelint-config-umeboshi{{#eq library 'vue'}}-vue{{/eq}}"]
+}

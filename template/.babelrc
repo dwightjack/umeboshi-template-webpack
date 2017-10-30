@@ -1,0 +1,3 @@
+{
+    "presets": ["umeboshi{{#eq library 'react'}}-react{{/eq}}"]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "umeboshi-template-webpack",
+  "version": "1.0.0",
+  "description": "Umeboshi Webpack Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git@github.com:dwightjack/umeboshi-template-webpack.git",
+  "author": "Marco Solazzi <marco.solazzi@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "devDependencies": {
+    "eslint": "4.8.0",
+    "eslint-config-umeboshi-node": "^0.1.0"
+  }
+}
