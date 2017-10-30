@@ -1,6 +1,6 @@
 {
   "name": "umeboshi-template-webpack",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "Umeboshi Webpack Template",
   "main": "index.js",
   "scripts": {
