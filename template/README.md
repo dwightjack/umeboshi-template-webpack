@@ -7,7 +7,7 @@
 {{#eq library 'react'}}* [React](https://facebook.github.io/react/) with JSX {{/eq}}
 {{#eq library 'vue'}}* [Vue.js](https://vuejs.org/) with `.vue` file support (no JSX support ATM) {{/eq}}
 * ES6+ with [Babel](https://babeljs.io/), [env](https://github.com/babel/babel-preset-env) and [stage-2](https://babeljs.io/docs/plugins/preset-stage-2/) presets
-* [Webpack 2+](https://webpack.js.org/) {{#isnt library 'vanilla'}} and HMR {{/isnt}}
+* [Webpack 2+](https://webpack.js.org/){{#isnt library 'vanilla'}} and HMR {{/isnt}}
 * Unit test with [Jest](https://facebook.github.io/jest/){{#eq library 'react'}} and [Enzyme](http://airbnb.io/enzyme/){{/eq}}{{#eq library 'vue'}} and [avoriaz](https://github.com/eddyerburgh/avoriaz){{/eq}}
 * CSS and JS linting with [ESLint](http://eslint.org/) (airbnb preset) and [Stylelint](https://stylelint.io/)
 * [Sass](http://sass-lang.com/) with [node-sass](https://github.com/sass/node-sass) 
