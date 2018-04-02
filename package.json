@@ -1,6 +1,6 @@
 {
   "name": "umeboshi-template-webpack",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Umeboshi Webpack Template",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,6 @@
   },
   "devDependencies": {
     "eslint": "4.8.0",
-    "eslint-config-umeboshi-node": "^0.1.0"
+    "eslint-config-umeboshi-node": "^0.3.0"
   }
 }
