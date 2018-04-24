@@ -23,7 +23,7 @@
     "bundle:analyze": "npm run bundle:production -- --env.analyze",
     "modernizr": "node ./node_modules/umeboshi-scripts/modernizr",
     "modernizr:production": "cross-env NODE_ENV=production npm run modernizr",
-    "clean": "rimraf ./public/*",
+    "clean": "node ./node_modules/umeboshi-scripts/clean",
     "build": "npm run clean && npm run lint && npm run modernizr && npm run bundle",
     "build:production": "cross-env NODE_ENV=production npm run build",
     {{#eq library 'vue'}}
@@ -54,28 +54,28 @@
   "devDependencies": {
     {{!-- DEV_DEPENDENCIES --}}
     {{#eq library 'vanilla'}}
-    "babel-preset-umeboshi": "^0.3.0",
-    "eslint-config-umeboshi": "^0.3.0",
-    "stylelint-config-umeboshi": "^0.3.0",
+    "babel-preset-umeboshi": "0.4.0-0",
+    "eslint-config-umeboshi": "0.4.0-0",
+    "stylelint-config-umeboshi": "0.4.0-0",
     {{/eq}}
     {{#eq library 'react'}}
-    "babel-preset-umeboshi-react": "^0.3.0",
+    "babel-preset-umeboshi-react": "0.4.0-0",
     "enzyme": "2.9.1",
-    "eslint-config-umeboshi-react": "^0.3.0",
+    "eslint-config-umeboshi-react": "0.4.0-0",
     "react-test-renderer": "15.6.1",
-    "umeboshi-config-react": "^0.3.0",
-    "stylelint-config-umeboshi": "^0.3.0",
+    "umeboshi-config-react": "0.4.0-0",
+    "stylelint-config-umeboshi": "0.4.0-0",
     {{/eq}}
     {{#eq library 'vue'}}
-    "babel-preset-umeboshi": "^0.3.0",
-    "eslint-config-umeboshi-vue": "^0.3.0",
-    "stylelint-config-umeboshi-vue": "^0.3.0",
-    "umeboshi-config-vue": "^0.3.0",
+    "babel-preset-umeboshi": "0.4.0-0",
+    "eslint-config-umeboshi-vue": "0.4.0-0",
+    "stylelint-config-umeboshi-vue": "0.4.0-0",
+    "umeboshi-config-vue": "0.4.0-0",
     {{/eq}}
     "cross-env": "5.0.5",
-    "eslint-config-umeboshi-node": "^0.3.0",
+    "eslint-config-umeboshi-node": "0.4.0-0",
     "rimraf": "2.6.1",
-    "umeboshi-config": "^0.3.0",
-    "umeboshi-scripts": "^0.3.0"
+    "umeboshi-config": "0.4.0-0",
+    "umeboshi-scripts": "0.4.0-0"
   }
 }
