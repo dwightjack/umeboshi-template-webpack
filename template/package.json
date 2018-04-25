@@ -20,7 +20,7 @@
     "test": "cross-env BABEL_ENV=test jest --config ./node_modules/umeboshi-scripts/jest.loader.js",
     "bundle": "webpack --config ./node_modules/umeboshi-scripts/webpack.js --color --hide-modules",
     "bundle:production": "cross-env NODE_ENV=production npm run bundle",
-    "bundle:analyze": "npm run bundle -- --env.analyze",
+    "bundle:analyze": "cross-env NODE_ENV=production npm run bundle -- --env.analyze",
     "modernizr": "node ./node_modules/umeboshi-scripts/modernizr",
     "modernizr:production": "cross-env NODE_ENV=production npm run modernizr",
     "clean": "node ./node_modules/umeboshi-scripts/clean",
