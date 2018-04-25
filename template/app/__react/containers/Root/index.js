@@ -18,6 +18,4 @@ class Root extends Component {
 
 export default hot(module)(Root);
 
-export {
-    Root
-};
+export { Root };
