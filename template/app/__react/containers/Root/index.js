@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader'; //eslint-disable-line import/no-extraneous-dependencies
 
 import styles from './root.scss';
 
-export default class Root extends Component {
+class Root extends Component {
 
     render() {
 
@@ -14,3 +15,9 @@ export default class Root extends Component {
     }
 
 }
+
+export default hot(module)(Root);
+
+export {
+    Root
+};
