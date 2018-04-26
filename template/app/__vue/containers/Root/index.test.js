@@ -10,11 +10,11 @@ describe('<Root>', () => {
         wrapper = shallow(Root);
     });
 
-    it('should render a <div> tag', () => {
+    test('should render a <div> tag', () => {
         expect(wrapper.is('div')).toBe(true);
     });
 
-    it('should contain "Hello World"', () => {
+    test('should contain "Hello World"', () => {
         expect(wrapper.text().trim()).toBe('Hello World');
     });
 
