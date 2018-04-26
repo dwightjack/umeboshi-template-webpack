@@ -39,9 +39,9 @@
     {{!-- DEPENDENCIES --}}
     {{#eq library 'react'}}
     "classnames": "2.2.5",
-    "prop-types": "15.5.10",
-    "react": "15.6.1",
-    "react-dom": "15.6.1",
+    "prop-types": "^15.0.0",
+    "react": "~16.3.0",
+    "react-dom": "~16.3.0",
     {{/eq}}
     {{#eq library 'vue'}}
     "vue": "~2.5.0",
@@ -60,9 +60,8 @@
     {{/eq}}
     {{#eq library 'react'}}
     "babel-preset-umeboshi-react": "^0.4.0",
-    "enzyme": "2.9.1",
     "eslint-config-umeboshi-react": "^0.4.0",
-    "react-test-renderer": "15.6.1",
+    "react-test-renderer": "~16.3.0",
     "umeboshi-config-react": "^0.4.0",
     "stylelint-config-umeboshi": "^0.3.0",
     {{/eq}}
