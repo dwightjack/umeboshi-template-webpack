@@ -45,11 +45,11 @@
     {{/eq}}
     {{#eq library 'vue'}}
     "vue": "~2.5.0",
-    "vue-router": "~2.7.0",
+    "vue-router": "~3.0.0",
     {{/eq}}
     "babel-polyfill": "6.26.0",
-    "normalize.css": "7.0.0",
-    "sass-mq": "3.3.2"
+    "normalize.css": "^8.0.0",
+    "sass-mq": "^4.0.0"
   },
   "devDependencies": {
     {{!-- DEV_DEPENDENCIES --}}
@@ -72,7 +72,7 @@
     "stylelint-config-umeboshi-vue": "^0.3.0",
     "umeboshi-config-vue": "^0.4.0",
     {{/eq}}
-    "cross-env": "5.0.5",
+    "cross-env": "~5.1.0",
     "eslint-config-umeboshi-node": "^0.3.0",
     "umeboshi-config": "^0.4.0",
     "umeboshi-scripts": "^0.4.0"
