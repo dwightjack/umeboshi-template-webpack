@@ -1,4 +1,4 @@
 {
     "root": true,
-    "extends": ["umeboshi"]
+    "extends": ["umeboshi"{{#if prettier}}, "prettier"{{/if}}]
 }

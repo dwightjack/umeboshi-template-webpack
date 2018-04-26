@@ -53,6 +53,11 @@
   },
   "devDependencies": {
     {{!-- DEV_DEPENDENCIES --}}
+    {{#if prettier}}
+    "eslint-config-prettier": "~2.9.0",
+    "eslint-plugin-prettier": "~2.6.0",
+    "prettier": "~1.12.0",
+    {{/if}}
     {{#eq library 'vanilla'}}
     "babel-preset-umeboshi": "^0.3.0",
     "eslint-config-umeboshi": "^0.4.0",

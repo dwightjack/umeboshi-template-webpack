@@ -23,17 +23,36 @@ module.exports.prompts = () => {
             value: 'vue'
         }],
         default: 0
+    }, {
+        type: 'confirm',
+        name: 'prettier',
+        message: 'Do you want to use prettier?',
+        default: false
     }];
 };
 
 
-module.exports.fileMaps = ({ options }) => [
-    {
-        pattern: new RegExp(`^app\/__${options.library}\/(.+)$`),
-        rename: ({ match }) => `app/assets/js/${match[1]}`
-    },
-    {
-        pattern: 'app/__*/**/{.,}*',
-        rename: null //delete
+module.exports.fileMaps = ({ options }) => {
+
+    const map = [
+        {
+            pattern: new RegExp(`^app\/__${options.library}\/(.+)$`),
+            rename: ({ match }) => `app/assets/js/${match[1]}`
+        },
+        {
+            pattern: 'app/__*/**/{.,}*',
+            rename: null //delete
+        }
+    ];
+
+    if (!options.prettier) {
+        map.push(
+            {
+                pattern: '.prettierrc.js',
+                rename: null
+            }
+        );
     }
-];
+
+    return map;
+};
