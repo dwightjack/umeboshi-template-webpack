@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Root from './index';
+import { Root } from './index';
 
 /* eslint-env jest */
 describe('<Root>', () => {
