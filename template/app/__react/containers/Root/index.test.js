@@ -11,11 +11,11 @@ describe('<Root>', () => {
         root = shallow(<Root />);
     });
 
-    it('should render a <div> tag', () => {
+    test('should render a <div> tag', () => {
         expect(root.is('div')).toBe(true);
     });
 
-    it('should contain "Hello World"', () => {
+    test('should contain "Hello World"', () => {
         expect(root.text()).toBe('Hello World');
     });
 
