@@ -1,4 +1,4 @@
-import { shallow } from 'avoriaz';
+import { shallowMount } from '@vue/test-utils';
 import Root from './index';
 
 /* eslint-env jest */
@@ -7,7 +7,7 @@ describe('<Root>', () => {
     let wrapper;
 
     beforeEach(() => {
-        wrapper = shallow(Root);
+        wrapper = shallowMount(Root);
     });
 
     test('should render a <div> tag', () => {

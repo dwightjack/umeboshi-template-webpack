@@ -54,26 +54,26 @@
   "devDependencies": {
     {{!-- DEV_DEPENDENCIES --}}
     {{#eq library 'vanilla'}}
-    "babel-preset-umeboshi": "^0.3.0",
-    "eslint-config-umeboshi": "^0.4.0",
+    "babel-preset-umeboshi": "~0.4.0",
+    "eslint-config-umeboshi": "^0.5.0",
     "stylelint-config-umeboshi": "^0.3.0",
     {{/eq}}
     {{#eq library 'react'}}
-    "babel-preset-umeboshi-react": "^0.4.0",
-    "eslint-config-umeboshi-react": "^0.4.0",
+    "babel-preset-umeboshi-react": "~0.5.0",
+    "eslint-config-umeboshi-react": "^0.5.0",
     "react-test-renderer": "~16.3.0",
-    "umeboshi-config-react": "^0.4.0",
+    "umeboshi-config-react": "~0.5.0",
     "stylelint-config-umeboshi": "^0.3.0",
     {{/eq}}
     {{#eq library 'vue'}}
-    "babel-preset-umeboshi": "^0.3.0",
-    "eslint-config-umeboshi-vue": "^0.4.0",
+    "babel-preset-umeboshi": "~0.4.0",
+    "eslint-config-umeboshi-vue": "~0.5.0",
     "stylelint-config-umeboshi-vue": "^0.3.0",
-    "umeboshi-config-vue": "^0.4.0",
+    "umeboshi-config-vue": "~0.5.0",
     {{/eq}}
     "cross-env": "~5.1.0",
     "eslint-config-umeboshi-node": "^0.3.0",
-    "umeboshi-config": "^0.4.0",
-    "umeboshi-scripts": "^0.4.0"
+    "umeboshi-config": "~0.5.0",
+    "umeboshi-scripts": "~0.5.0"
   }
 }
