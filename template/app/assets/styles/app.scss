@@ -1,5 +1,5 @@
 //base styles and mixins
-@import "normalize.css/normalize";
+@import "~normalize.css/normalize.css"; //https://github.com/sass/node-sass/issues/2362
 @import "base";
 
 @import "print";
