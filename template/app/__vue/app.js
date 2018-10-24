@@ -2,8 +2,6 @@
  * Main Application File
  */
 
-import 'babel-polyfill';
-
 import Vue from 'vue';
 import Root from '@/containers/Root';
 

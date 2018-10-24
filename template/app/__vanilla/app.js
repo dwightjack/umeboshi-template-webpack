@@ -6,8 +6,6 @@
  *
  */
 
-import 'babel-polyfill';
-
 const box = document.createElement('p');
 
 box.className = 'c-box';
